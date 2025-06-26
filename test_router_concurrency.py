@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Fixed version of the SGLang router concurrency test
+SGLang router concurrency test
 """
 
 import argparse
@@ -18,7 +18,7 @@ import requests
 
 # Configuration
 DEFAULT_MODEL = "qwen/qwen2.5-0.5b-instruct"
-CONCURRENCY_LEVELS = [10, 20, 50, 100, 200, 1000, 2000, 5000, 10000, 30000, 50000]
+CONCURRENCY_LEVELS = [10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000, 30000, 40000, 50000]
 
 def kill_existing_sglang_processes():
     """Kill any existing SGLang processes"""
